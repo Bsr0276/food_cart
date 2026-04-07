@@ -1,8 +1,23 @@
 
+import RestaurantDetail from "./restaurant-detail";
+import RestaurantProducts from "./restaurant-products";
+
 const Restaurant = () => {
   return (
-    <div>Restaurant</div>
-  )
-}
+    <div>
+      <div className="shadow">
+        <div className="container">
+          <RestaurantDetail />
+        </div>
+      </div>
 
-export default Restaurant
+      <div>
+        <div className="container">
+          <RestaurantProducts />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Restaurant;
